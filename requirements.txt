@@ -1,0 +1,6 @@
+Faker==40.38.0
+packaging==26.3
+pillow==12.3.0
+setuptools==84.0.0
+tzdata==2026.3
+wheel==0.48.0
