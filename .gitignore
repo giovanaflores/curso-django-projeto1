@@ -2,10 +2,14 @@ venv/
 __pycache__/
 db.sqlite3
 *.pyc
-.vscode
+.vscode/
 .env
 .venv
-.pytest_cache
+.pytest_cache/
 .ideal
 staticfiles/
 media/
+log.txt
+.coverage
+.coveragerc
+htmlcov/

@@ -28,7 +28,7 @@ class RecipeModelTest(RecipeTestBase):
             ('title', 65),
             ('description', 165),
             ('preparation_time_unit', 65),
-            ('servings_init', 65),
+            ('servings_unit', 65),
     ])
 
     def test_recipe_fields_max_length(self, field, max_length):
@@ -50,4 +50,12 @@ class RecipeModelTest(RecipeTestBase):
             msg='Recipe is_published is not False',
         )
 
-    
+    def test_recipe_string_representation(self):
+        needed = 'Testing Representation'
+        self.recipe.title = needed
+        self.recipe.save()
+        self.assertEqual(
+            str(self.recipe), needed,
+            msg=f'Recipe string representation must be ' \
+                f'"{needed}" but "{str(self.recipe)}" was received.'
+        )
