@@ -1,0 +1,7 @@
+.center {
+    text-align: center;
+}
+
+.m-y {
+    margin: var(--spacing-gutter-medium) 0;
+}
